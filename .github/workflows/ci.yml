@@ -20,10 +20,10 @@ jobs:
       run:
         working-directory: advanced-hello-world-fe-messages
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           path: advanced-hello-world-fe-messages
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: YutakaX17/advanced-hello-world-fe-core
           ref: 7ae9d2d505d4403258bf4a10fc545e49b174bc01
