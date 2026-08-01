@@ -6,7 +6,7 @@ import { createMessagesModule } from "./module";
 
 describe("createMessagesModule", () => {
   it("exports the messages route through the shared contract", () => {
-    const module = createMessagesModule("/api");
+    const module = createMessagesModule({ apiBaseUrl: "/api" });
 
     expect(module.id).toBe("messages");
     expect(module.routes.map(({ path }) => path)).toEqual(["/"]);
