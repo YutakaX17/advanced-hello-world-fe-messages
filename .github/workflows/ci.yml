@@ -34,6 +34,8 @@ jobs:
           cache: npm
           cache-dependency-path: advanced-hello-world-fe-messages/package-lock.json
       - run: npm ci
+        working-directory: advanced-hello-world-fe-core
+      - run: npm ci
       - run: npm run format:check
       - run: npm run lint
       - run: npm run typecheck
