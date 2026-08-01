@@ -1,0 +1,80 @@
+.ahw-main h1 {
+  margin: 0 0 4rem;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.ahw-card {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #dbe3f0;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgb(15 23 42 / 9%);
+}
+
+.ahw-card h2 {
+  margin-top: 0;
+}
+
+.ahw-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 650;
+}
+
+.ahw-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ahw-row input {
+  min-width: 0;
+  flex: 1;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.ahw-row input:focus {
+  outline: 3px solid rgb(37 99 235 / 22%);
+  border-color: #2563eb;
+}
+
+.ahw-row button {
+  padding: 0.8rem 1.25rem;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: #2563eb;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ahw-row button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.ahw-error {
+  margin-bottom: 0;
+  color: #b91c1c;
+}
+
+@media (max-width: 520px) {
+  .ahw-main h1 {
+    margin-bottom: 2rem;
+  }
+
+  .ahw-card {
+    padding: 1.25rem;
+  }
+
+  .ahw-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
